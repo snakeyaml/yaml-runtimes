@@ -119,6 +119,15 @@ libraries:
     build-script: java-snakeyaml-build.sh
     tests: [event, json]
 
+  java-snakeengine:
+    <<: *java
+    name: SnakeYAML Engine
+    homepage: https://bitbucket.org/asomov/snakeyaml-engine
+    source: https://bitbucket.org/asomov/...
+    version: x.y
+    build-script: java-snakeyaml-build.sh
+    tests: [event, json]
+
   js-jsyaml:
     <<: *node
     name: js-yaml
