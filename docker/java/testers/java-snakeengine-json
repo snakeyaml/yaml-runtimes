@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+java -jar /java/snakeengine2json-*-jar-with-dependencies.jar
