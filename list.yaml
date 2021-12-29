@@ -122,10 +122,10 @@ libraries:
   java-snakeengine:
     <<: *java
     name: SnakeYAML Engine
-    homepage: https://bitbucket.org/asomov/snakeyaml-engine
-    source: https://bitbucket.org/asomov/...
-    version: x.y
-    build-script: java-snakeyaml-build.sh
+    homepage: https://bitbucket.org/snakeyaml/snakeyaml-engine
+    source: https://bitbucket.org/snakeyaml/snakeyaml-engine/get/snakeyaml-2.3.tar.gz
+    version: '2.3'
+    build-script: java-snakeyamlengine-build.sh
     tests: [event, json]
 
   js-jsyaml:
