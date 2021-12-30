@@ -19,6 +19,7 @@
     <properties>
         <!-- can be changed from command line -->
         <snakeversion>1.30</snakeversion>
+        <snakeengineversion>2.3</snakeengineversion>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
@@ -28,6 +29,11 @@
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
             <version>${snakeversion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.snakeyaml</groupId>
+            <artifactId>snakeyaml-engine</artifactId>
+            <version>${snakeengineversion}</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>

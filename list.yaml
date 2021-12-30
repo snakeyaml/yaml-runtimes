@@ -123,10 +123,10 @@ libraries:
     <<: *java
     name: SnakeYAML Engine
     homepage: https://bitbucket.org/snakeyaml/snakeyaml-engine
-    source: https://bitbucket.org/snakeyaml/snakeyaml-engine/get/snakeyaml-2.3.tar.gz
+    source: https://bitbucket.org/snakeyaml/snakeyaml-engine/get/master.tar.gz
     version: '2.3'
-    build-script: java-snakeyamlengine-build.sh
-    tests: [event, json]
+    build-script: java-snakeyaml-engine-build.sh
+    tests: [event, json, yaml]
 
   js-jsyaml:
     <<: *node
