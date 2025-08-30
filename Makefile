@@ -3,7 +3,7 @@ LIBRARY :=
 
 DOTNET =  dotnet-yamldotnet
 HASKELL = hs-hsyaml hs-reference
-#JAVA =    java-snakeyaml java-snakeengine
+JAVA =    java-snakeyaml java-snakeengine
 LUA =     lua-lyaml
 NIM =     nim-nimyaml
 NODE =    js-jsyaml js-yaml
@@ -13,14 +13,14 @@ PYTHON =  py-pyyaml py-ruamel
 RUBY =    ruby-psych
 STATIC =  c-libfyaml c-libyaml cpp-rapidyaml cpp-yamlcpp go-yaml rust-yamlrust
 
-build: $(DOTNET) $(HASKELL) $(LUA) $(NIM) $(NODE) $(PERL) $(PYTHON) $(RUBY) $(STATIC)
+build: $(DOTNET) $(HASKELL) $(JAVA) $(LUA) $(NIM) $(NODE) $(PERL) $(PYTHON) $(RUBY) $(STATIC)
 
 runtime-all:
 	docker build -t yamlio/alpine-runtime-all  -f docker/Dockerfile .
 
 dotnet:  $(DOTNET)
 haskell: $(HASKELL)
-#java:    $(JAVA)
+java:    $(JAVA)
 lua:     $(LUA)
 nim:     $(NIM)
 node:    $(NODE)
@@ -30,11 +30,11 @@ python:  $(PYTHON)
 ruby:    $(RUBY)
 static:  $(STATIC)
 
-COMMON = $(DOTNET) $(HASKELL) $(LUA) $(NODE) $(PERL) $(PYTHON) $(RUBY) $(STATIC)
+COMMON = $(DOTNET) $(HASKELL) $(JAVA) $(LUA) $(NODE) $(PERL) $(PYTHON) $(RUBY) $(STATIC)
 
 $(DOTNET):  RUNTIME = dotnet
 $(HASKELL): RUNTIME = haskell
-#$(JAVA):    RUNTIME = java
+$(JAVA):    RUNTIME = java
 $(LUA):     RUNTIME = lua
 $(NIM):     RUNTIME = static
 $(NODE):    RUNTIME = node

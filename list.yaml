@@ -12,9 +12,9 @@ runtimes:
   runtime: haskell
   build-script: hs-build.sh
   lang: Haskell
-#- &java
-#  runtime: java
-#  lang: Java
+- &java
+  runtime: java
+  lang: Java
 - &lua
   runtime: lua
   build-script: lua-build.sh
@@ -120,23 +120,23 @@ libraries:
     version: master
     tests: [yeast]
 
-#  java-snakeyaml:
-#    <<: *java
-#    name: SnakeYAML
-#    homepage: https://bitbucket.org/snakeyaml/snakeyaml/
-#    source: https://bitbucket.org/snakeyaml/snakeyaml/get/master.tar.gz
-#    version: '1.31-SNAPSHOT'
-#    build-script: java-snakeyaml-build.sh
-#    tests: [event, json, yaml]
-#
-#  java-snakeengine:
-#    <<: *java
-#    name: SnakeYAML Engine
-#    homepage: https://bitbucket.org/snakeyaml/snakeyaml-engine
-#    source: https://bitbucket.org/snakeyaml/snakeyaml-engine/get/master.tar.gz
-#    version: '2.4-SNAPSHOT'
-#    build-script: java-snakeyaml-engine-build.sh
-#    tests: [event, json, yaml]
+  java-snakeyaml:
+    <<: *java
+    name: SnakeYAML
+    homepage: https://bitbucket.org/snakeyaml/snakeyaml/
+    source: https://bitbucket.org/snakeyaml/snakeyaml/get/master.tar.gz
+    version: '2.5-SNAPSHOT'
+    build-script: java-snakeyaml-build.sh
+    tests: [event, json, yaml]
+
+  java-snakeengine:
+    <<: *java
+    name: SnakeYAML Engine
+    homepage: https://bitbucket.org/snakeyaml/snakeyaml-engine
+    source: https://bitbucket.org/snakeyaml/snakeyaml-engine/get/master.tar.gz
+    version: '2.11-SNAPSHOT'
+    build-script: java-snakeyaml-engine-build.sh
+    tests: [event, json, yaml]
 
   js-jsyaml:
     <<: *node

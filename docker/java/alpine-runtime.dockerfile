@@ -1,10 +1,10 @@
-FROM alpine:3.15.0
+FROM alpine:3.20
 
 RUN apk update && \
   apk add \
     less \
     busybox \
-    openjdk8-jre \
+    openjdk17-jre \
     inotify-tools \
   && true
 
