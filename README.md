@@ -211,7 +211,7 @@ Type `make list` to see the following list:
 | hs-hsyaml         | Haskell    | [HsYAML](https://github.com/haskell-hvr/HsYAML) | 0.2.1.0       | haskell |
 | hs-reference      | Haskell    | [YAMLReference](https://github.com/orenbenkiki/yamlreference) | master        | haskell |
 | java-snakeengine  | Java       | [SnakeYAML Engine](https://bitbucket.org/snakeyaml/snakeyaml-engine) | 2.11-SNAPSHOT | java    |
-| java-snakeyaml    | Java       | [SnakeYAML](https://bitbucket.org/snakeyaml/snakeyaml/) | 2.5-SNAPSHOT  | java    |
+| java-snakeyaml    | Java       | [SnakeYAML](https://bitbucket.org/snakeyaml/snakeyaml/) | 2.6-SNAPSHOT  | java    |
 | js-jsyaml         | Javascript | [js-yaml](https://github.com/nodeca/js-yaml) | 4.1.0         | node    |
 | js-yaml           | Javascript | [yaml](https://github.com/eemeli/yaml) | 2.4.5         | node    |
 | lua-lyaml         | Lua        | [lyaml](https://github.com/gvvaughan/lyaml) | 6.2.8         | lua     |

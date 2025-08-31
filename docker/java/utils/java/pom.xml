@@ -18,7 +18,7 @@
 
     <properties>
         <!-- can be changed from command line -->
-        <snakeversion>2.5-SNAPSHOT</snakeversion>
+        <snakeversion>2.6-SNAPSHOT</snakeversion>
         <snakeengineversion>2.11-SNAPSHOT</snakeengineversion>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>

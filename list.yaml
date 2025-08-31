@@ -125,7 +125,7 @@ libraries:
     name: SnakeYAML
     homepage: https://bitbucket.org/snakeyaml/snakeyaml/
     source: https://bitbucket.org/snakeyaml/snakeyaml/get/master.tar.gz
-    version: '2.5-SNAPSHOT'
+    version: '2.6-SNAPSHOT'
     build-script: java-snakeyaml-build.sh
     tests: [event, json, yaml]
 
